@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: https://www.frontendmentor.io/solutions/newsletter-signup-1XArnSoNIC
 - Live Site URL: https://ctrlnilson.github.io/FrontendMentor-3-NewsletterSignUp/
 
 ## My process
