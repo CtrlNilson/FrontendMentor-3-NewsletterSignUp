@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <div class="container">
+    
+    <div class="wrapper-left">
+      <div class="header-left">
+        Stay updated!
+      </div>
+      <div class="describtion-left">
+        Join 60,000+ product managers receiving monthly updates on:
+      </div>
+      <div class="list-left">
+        <ul>
+          <li><span>Product discovery and building what matters</span></li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+      </div>
+      <!-- Sign-up form start -->
+      <div class="form-mail">
+        <form action="">
+          <div class="email-left">
+            <div class="email-description">
+              <div class="email-highlight">Email address</div><div id="email-error">Valid email required</div>
+            </div>
+            <input id="email-input" class="" type="email" placeholder="email@company.com"></input>
+          </div>
+          <div>
+            <button onclick="validateEmail()" type="button" id="button-confirm" class="form-button hover">Subscribe to monthly newsletter</button>
+          </div>
+        </form>
+      </div>
+      <!-- Sign-up form end -->
+    </div>
+    <!--<div class="wrapper-right">
+      <img class="image-right" src="./assets/images/illustration-sign-up-desktop.svg" alt="login-artwork">
+    </div> -->
+    <div class="wrapper-right">
+      <picture>
+        <source class="image-right" media="(max-width: 375px)" srcset="./assets/images/illustration-sign-up-mobile.svg">
+        <img class="image-right" src="./assets/images/illustration-sign-up-desktop.svg" alt="login-artwork">
+      </picture>
+    </div>
+  </div>
+  <div id="success">
+    <!-- Success message start -->
+    <div class="wrapper-success">
+      <div class="icon-success">
+        <img id="icon" src="./assets/images/icon-success.svg" alt="icon-success">
+      </div>
+      <div class="header-success">
+        Thanks for subscribing!
+      </div>
+      <div class="text-success">
+        A confirmation email has been sent to <span id="emailTo">ash@loremcompany.com</span>. 
+        Please open it and click the button inside to confirm your subscription.
+      </div>
+      <div>
+         <button onclick="showDiv()" type="button" class="button-success">Dismiss message</button>
+      </div>
+    </div>
+    <!-- Success message end -->  
+  </div>
+ 
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/CtrlNilson">Nils</a>.
+  </div>
+</body>
+<script src="./index.js"></script>
+</html>
